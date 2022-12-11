@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/app-styles.css">
+    <title>Restaurant Menu App</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-offset-2 col-sm-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Restaurant Menu App</h3>
+            </div>
+            <div class="panel-body">
+              <dl class="dl-horizontal">
+                <dt>Course:</dt> <dd>Single Page Web Applications with AngularJS</dd>
+                <dt>Module:</dt> <dd>Components, Events, Modules, and Routing (Module #4)</dd>
+                <dt>Assignment:</dt> <dd>Restaurant Menu App - Master/Detail View</dd>
+                <dt>Submitted by:</dt> <dd>MeroSH</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+          <ui-view></ui-view>
+        </div>
+      </div>
+
+      <div class="pull-right"><a href="../index.html">Home</a></div>
+    </div>
+
+    <loading-spinner></loading-spinner>
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/menuapp.module.js"></script>
+    <script src="src/spinner/spinner.module.js"></script>
+    <script src="src/menudata/menudata.module.js"></script>
+
+    <!-- Routes -->
+    <script src="src/menuapp.routes.js"></script>
+
+    <!-- 'MenuApp' module artifacts -->
+    <script src="src/categories/categories.component.js"></script>
+    <script src="src/categories/categories.controller.js"></script>
+    <script src="src/items/items.component.js"></script>
+    <script src="src/items/items.controller.js"></script>
+
+    <!-- 'Spinner' module artifacts -->
+    <script src="src/spinner/loadingspinner.component.js"></script>
+
+    <!-- 'Data' module artifacts -->
+    <script src="src/menudata/menudata.service.js"></script>
+
+  </body>
+</html>
