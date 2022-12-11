@@ -1,0 +1,5 @@
+<div class="list-group">
+  <a ui-sref="items({ category: category.short_name })" class="list-group-item" ng-repeat="category in $ctrl.list">
+    {{ $index + 1 }}. {{ category.name }} <span class="label label-info">{{ category.short_name }}</span>
+  </a>
+</div>

@@ -1,0 +1,20 @@
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price (Large)</th>
+            <th>Price (Small)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in $ctrl.list">
+            <td>{{$index + 1}}.</td>
+            <td>{{item.name}} <span class="label label-info">{{item.short_name}}</span></td>
+            <td>{{item.description}}</td>
+            <td>{{item.price_large | currency}}</td>
+            <td>{{item.price_small | currency}}</td>
+        </tr>
+    </tbody>
+</table>

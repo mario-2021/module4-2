@@ -1,0 +1,21 @@
+<ol class="breadcrumb">
+  <li><a ui-sref="home">Home</a></li>
+  <li><a ui-sref="categories">Categories</a></li>
+  <li class="active">Items</li>
+</ol>
+
+<h3>Items</h3>
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    Category Information
+  </div>
+  <div class="panel-body">
+    <dl class="dl-horizontal">
+      <dt>Name:</dt> <dd>{{ctrl.category.name}}</dd>
+      <dt>Short Name:</dt> <dd>{{ctrl.category.short_name}}</dd>
+    </dl>
+  </div>
+</div>
+
+<items list="ctrl.items"></items>
